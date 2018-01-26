@@ -1,0 +1,18 @@
+{
+  "CORS": {
+    "Origin": ["http://localhost:9000" , "http://localhost:8000"],
+    "LoginOrigin": ["http://localhost:9000", "http://localhost:8000"],
+    "Headers": ["Content-Type"],
+    "MaxAge": 17280000
+  },
+  "interface":":4984",
+  "log": ["HTTP", "Auth"],
+  "databases": {
+    "todolite": {
+      "server": "walrus:",
+      "users": {
+        "GUEST": {"disabled": false, "admin_channels": ["*"] }
+      }
+    }
+  }
+}
