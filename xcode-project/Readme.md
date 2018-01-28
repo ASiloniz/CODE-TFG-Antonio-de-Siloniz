@@ -1,34 +1,9 @@
-## Getting Started
+## Configuración del entorno en caso de Error:
 
-### Installing Couchbase Lite
+Si al descargar y ejecutar el proyecto xcode-project aparece un error en el fichero
+header: Todo-Bridging-Header.h, simplementa arrastrar de nuevo el directorio CouchbaseLite.framework del
+proyecto a Xcode8 para solucionarlo.
 
-1. Change to ios directory.
+Em caso de errores con el entorno, seguir la guía de configuración mediante Cocoapods de la memoria del
+TFG.
 
-  ```
-  cd ios
-  ```
-
-2. Run installation script (downloads Couchbase Lite to **Frameworks** folder).
-
-  ```
-  ./install.sh
-  ```
-
-### Configuration
-
-You can enable functionalities individually. By default, they are all disabled and can be modified in **AppDelegate.swift**.
-
-```swift
-let kLoginFlowEnabled = true
-let kEncryptionEnabled = false
-let kSyncEnabled = true
-let kSyncGatewayUrl = URL(string: "http://localhost:4984/todo/")!
-let kLoggingEnabled = false
-let kUsePrebuiltDb = false
-let kConflictResolution = false
-```
-
-### Building
-
-1. Open **Todo.xcodeproj** in Xcode.
-2. Build and run.
